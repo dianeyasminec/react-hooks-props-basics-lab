@@ -9,7 +9,7 @@ return(
       { props.bio ? <p>{props.bio}</p> : null}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       {/* add your <Links /> component here */}
-     <Links />
+     <Links  github={props.github} linkedin={props.linkedin}/>
     </div>
   );
 }
