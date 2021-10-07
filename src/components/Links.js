@@ -1,14 +1,15 @@
+ // eslint-disable-next-line
 import React from "react";
 
 function Links(props){
-    const isLinks = props.links.github
-    const isLinkedin= props.links.linkedin.
-    //console.log(isLinks)
+    const github = props.github
+    const linkedin= props.linkedin
+    //console.log(github)
     return(
 <div>
-    <h3>"Links"</h3>
-    <a href={isLinks}></a>
-    <a href={isLinkedin}></a>
+    <h3>Links</h3>
+    <a href={github}>github</a>
+    <a href={linkedin}>linkedin</a>
 
 </div>
     )}
