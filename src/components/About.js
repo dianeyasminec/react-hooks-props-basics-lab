@@ -1,18 +1,17 @@
 import React from "react";
 
 function About(props) {
-const isBio = props.isBio;
-if(isBio) {
-  return <p>{props.isBio}</p>
-}
-  return <p>""</p>
-}
-{(
+
+const links = props.links.linkedin;
+const github = props.links.github
+return(
     <div id="about">
       <h2>About Me</h2>
-      <p></p>
+      { props.bio ? <p>{props.bio}</p> : null}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       {/* add your <Links /> component here */}
+      <a href={links}></a>
+      <a> href={github}</a>
     </div>
   );
 }
